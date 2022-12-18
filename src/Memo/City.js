@@ -1,12 +1,13 @@
 import React, { memo } from "react";
 
-function City({ cities }) {
+function City({ cities, addData }) {
     console.log("city dirender");
     return (
         <div style={{ textAlign: "center" }}>
-            {cities.map((city) => (
-                <li key={city}>{city}</li>
+            {cities.map((city, index) => (
+                <li key={index}>{city}</li>
             ))}
+            <button onClick={addData}>Tambah Kota Baru</button>
         </div>
     );
 }
