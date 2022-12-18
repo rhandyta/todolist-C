@@ -11,7 +11,6 @@ function Child() {
     }
     return (
         <div>
-            <h1>{context.name}</h1>
             <input type="text" ref={inputRef} />
             <button onClick={handleClick}>Click</button>
         </div>
